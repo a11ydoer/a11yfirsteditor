@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CKEditor for WordPress
 ======================
 
@@ -20,3 +21,6 @@ For information about features, installation, upgrading and changelog check http
 Licensed under the GPL license.
 
 For full details about the license, please check the LICENSE.md file.
+=======
+# plugin
+>>>>>>> 6eb2d814b301d80e00c8d370644c7052fe66f749
