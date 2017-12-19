@@ -7,11 +7,6 @@ This plugin replaces the default WordPress editor with A11yFirst Editor(https://
 
 For information about features, installation, upgrading and changelog check https://a11yfirst.library.illinois.edu
 
-### License
+## License
 
 Licensed under the GPL license.
-
-For full details about the license, please check the LICENSE.md file.
-=======
-
-
