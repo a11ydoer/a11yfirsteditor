@@ -14,7 +14,7 @@ function ckeditor_admin_overview()  {
 	?>
 	<div class="wrap ckeditor-wrap">
 	<div id="icon-wp-ckeditor" class="icon32"><br /></div>
-	<h2><?php _e('CKEditor For WordPress', 'ckeditor_wordpress') ?> <?php /*echo $this->version*/?>&nbsp;</h2>
+	<h2><?php _e('A11yFirstEditor For WordPress', 'ckeditor_wordpress') ?> <?php /*echo $this->version*/?>&nbsp;</h2>
 		<div id="dashboard-widgets-wrap" class="ckeditor-overview">
 			<div id="dashboard-widgets" class="metabox-holder">
 				<div id="post-body">

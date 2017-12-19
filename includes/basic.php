@@ -6,7 +6,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 ?>
 <div class=wrap>
 	<div id="icon-wp-ckeditor" class="icon32"><br /></div>
-	<h2><?php _e('CKEditor - Basic Settings', 'ckeditor_wordpress') ?></h2>
+	<h2><?php _e('A11yFirstEditor - Basic Settings', 'ckeditor_wordpress') ?></h2>
 	<form method="post" >
 		<?php wp_nonce_field('ckeditor_create_nonce_basic','csrf_ckeditor-for-wordpress'); ?>
 		<h3><?php _e('Common Options', 'ckeditor_wordpress') ?></h3>

@@ -29,67 +29,63 @@ CKEDITOR.addStylesSet( 'wordpress',
 	{ name : 'Address'			, element : 'address' },
 	*/
 
-	{ name : 'Blue Title'		, element : 'h3', styles : { 'color' : '#000080' } },
-	{ name : 'Red Title'		, element : 'h3', styles : { 'color' : '#B22222' } },
+	// { name : 'Blue Title'		, element : 'h3', styles : { 'color' : '#000080' } },
+	// { name : 'Red Title'		, element : 'h3', styles : { 'color' : '#B22222' } },
 
 	/* Inline Styles */
 
 	// These are core styles available as toolbar buttons. You may opt enabling
 	// some of them in the Styles combo, removing them from the toolbar.
-	/*
+	
 	{ name : 'Strong'			, element : 'strong', overrides : 'b' },
 	{ name : 'Emphasis'			, element : 'em'	, overrides : 'i' },
-	{ name : 'Underline'		, element : 'u' },
-	{ name : 'Strikethrough'	, element : 'strike' },
-	{ name : 'Subscript'		, element : 'sub' },
-	{ name : 'Superscript'		, element : 'sup' },
-	*/
-
+	{ name : 'Inline Quotation'	, element : 'q' },
 	/*
 	{ name : 'Big'				, element : 'big' },
 	{ name : 'Small'			, element : 'small' },
 	{ name : 'Typewriter'		, element : 'tt' },
 	*/
-
+	{ name : 'Cited Work'		, element : 'cite' },
 	{ name : 'Computer Code'	, element : 'code' },
-	/*
-	{ name : 'Keyboard Phrase'	, element : 'kbd' },
-	{ name : 'Sample Text'		, element : 'samp' },
-	{ name : 'Variable'			, element : 'var' },
-
+	{ name : 'Subscript'		, element : 'sub' },
+	{ name : 'Superscript'		, element : 'sup' },
 	{ name : 'Deleted Text'		, element : 'del' },
 	{ name : 'Inserted Text'	, element : 'ins' },
-	 */
-	{ name : 'Cited Work'		, element : 'cite' },
-	{ name : 'Inline Quotation'	, element : 'q' },
 
-	{ name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
-	{ name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
+	{ name : 'Strikethrough'	, element : 'strike' },
+ 
 
-	{ name : 'Marker: Yellow'	, element : 'span', styles : { 'background-color' : 'Yellow' } },
-	{ name : 'Marker: Green'	, element : 'span', styles : { 'background-color' : 'Lime' } },
+	{ name : 'Underline'		, element : 'u' },
+
+
+	// { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
+	// { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
+
+	{ name : 'Marker'	, element : 'span', styles : { 'background-color' : 'Yellow' } 
+}
+	// { name : 'Marker: Green'	, element : 'span', styles : { 'background-color' : 'Lime' } },
 
 	/* Object Styles */
 
-	{
-		name : 'Image on Left',
-		element : 'img',
-		attributes :
-		{
-			'style' : 'padding: 5px; margin-right: 5px',
-			'border' : '2',
-			'align' : 'left'
-		}
-	},
+	// {
+	// 	name : 'Image on Left',
+	// 	element : 'img',
+	// 	attributes :
+	// 	{
+	// 		'style' : 'padding: 5px; margin-right: 5px',
+	// 		'border' : '2',
+	// 		'align' : 'left'
+	// 	}
+	// },
 
-	{
-		name : 'Image on Right',
-		element : 'img',
-		attributes :
-		{
-			'style' : 'padding: 5px; margin-left: 5px',
-			'border' : '2',
-			'align' : 'right'
-		}
-	}
+	// {
+	// 	name : 'Image on Right',
+	// 	element : 'img',
+	// 	attributes :
+	// 	{
+	// 		'style' : 'padding: 5px; margin-left: 5px',
+	// 		'border' : '2',
+	// 		'align' : 'right'
+	// 	}
+	// }
 ]);
