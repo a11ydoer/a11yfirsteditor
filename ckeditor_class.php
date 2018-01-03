@@ -31,7 +31,7 @@ class ckeditor_wordpress {
 		define('CKEDITOR_PLUGIN_URL', $this->plugin_path);
 		$this->ckeditor_path = $this->plugin_path . 'ckeditor/';
 		$this->editable_files = array(
-			'ckeditor.config.js' => dirname(__FILE__) . '/ckeditor.config.js',
+			'ckeditor.config.js' => dirname(__FILE__) . '/ckeditor/config.js',
 			'ckeditor.styles.js' => dirname(__FILE__) . '/ckeditor.styles.js',
 			'ckeditor.templates.js' => dirname(__FILE__) . '/ckeditor.templates.js',
 		);
@@ -239,7 +239,7 @@ class ckeditor_wordpress {
 	}
 
 	public function add_option_page() {
-		add_menu_page(__('CKEditor Settings'), 'CKEditor', 'administrator', 'ckeditor_settings', array(&$this, 'plugin_overview'), $this->plugin_path . 'images/menuicon.gif');
+		add_menu_page(__('CKEditor Settings'), 'AllyFirst Editor', 'administrator', 'ckeditor_settings', array(&$this, 'plugin_overview'), $this->plugin_path . 'images/menuicon.gif');
 		//line below replace url title from CKEditor to Overview
 		$overview_page = add_submenu_page('ckeditor_settings', __('CKEditor Overview'), __('Overview'), 'administrator', 'ckeditor_settings', array(&$this, 'plugin_overview'));
 		add_action('admin_print_styles-' . $overview_page, array(&$this, 'print_admin_styles'));
@@ -340,10 +340,11 @@ class ckeditor_wordpress {
 				while (false !== ($fileName = readdir($dhandle))) {
 					if ($fileName != '.' && $fileName != '..' && is_dir($skins_directory . $fileName) && is_readable($skins_directory . $fileName) ) {
 						$skin = $fileName;
-						if ( (file_exists($skins_directory . $fileName) && $fileName == 'moono') ||
+						if ( (file_exists($skins_directory . $fileName) && $fileName == 'a11yfirst') ||
 							( file_exists($skins_directory . $fileName . '/skin.js')
 							&& file_exists($skins_directory . $fileName . '/editor.css')
 							&& file_exists($skins_directory . $fileName . '/dialog.css')
+							&& file_exists($skins_directory . $fileName . '/a11yfirst.css')
 							)
 						){
 							$skins[] = $skin;
@@ -353,7 +354,7 @@ class ckeditor_wordpress {
 				closedir($dhandle);
 			}
 		}
-		return !empty($skins) ? $skins : array('moono','kama');
+		return !empty($skins) ? $skins : array('a11yfirst','moono','kama');
 	}
 
 	public function upload_options() {

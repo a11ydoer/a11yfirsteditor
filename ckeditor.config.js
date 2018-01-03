@@ -61,9 +61,9 @@ CKEDITOR.editorConfig = function(config) {
     'sourcearea,' +
     'specialchar,' +
     'tab,' +
-    'table,' +
-    'tableselection,' +
-    'tabletools,' +
+    //'table,' +
+    //'tableselection,' +
+    //'tabletools,' +
     'toolbar,' +
     'undo,' +
     'wysiwygarea';

@@ -6,13 +6,13 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 ?>
 <div class="wrap">
 	<div id="icon-wp-ckeditor" class="icon32"><br /></div>
-	<h2><?php _e('CKEditor - Advanced Settings', 'ckeditor_wordpress') ?></h2>
+	<h2><?php _e('A11yFirstEditor - Advanced Settings', 'ckeditor_wordpress') ?></h2>
 	<form method="post" id="ca_form">
 		<?php wp_nonce_field('ckeditor_create_nonce_advanced','csrf_ckeditor-for-wordpress'); ?>
 		<h3><?php _e('Advanced Options', 'ckeditor_wordpress') ?></h3>
 		<table class="form-table">
 		  <?php $acf = isset($this->options['advanced']['acf']) ? $this->options['advanced']['acf'] : 'f'; ?>
-			<tr valign="top">
+			<!-- <tr valign="top"> 
 				<th scope="row"><?php _e('Plugins', 'ckeditor_wordpress')?></th>
 				<td>
 					<?php
@@ -43,6 +43,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 				<span class="description">(<?php _e('Choose additional plugins which should be loaded into CKEditor', 'ckeditor_wordpress');?>)</span>
 			</td>
 			</tr>
+			-->
 			<tr valign="top">
 				<th scope="row"><?php _e('Advanced Content Filter', 'ckeditor_wordpress')?></th>
 				<td>
