@@ -252,14 +252,14 @@ class ckeditor_wordpress {
 		$basic_page = add_submenu_page('ckeditor_settings', __('CKEditor Basic Settings'), __('Basic Settings'), 'administrator', 'ckeditor_basic_options', array(&$this, 'option_page'));
 		add_action('admin_print_scripts-' . $basic_page, array(&$this, 'basic_settings_js'));
 
-		add_submenu_page('ckeditor_settings', __('CKEditor Advanced Settings'), __('Advanced Settings'), 'administrator', 'ckeditor_advanced_options', array(&$this, 'advanced_options'));
-		$upload_page = add_submenu_page('ckeditor_settings', __('CKEditor Upload Settings'), __('Upload Options'), 'administrator', 'ckeditor_upload_options', array(&$this, 'upload_options'));
-		add_action('admin_print_styles-' . $upload_page, array(&$this, 'print_admin_upload_styles'));
+		//add_submenu_page('ckeditor_settings', __('CKEditor Advanced Settings'), __('Advanced Settings'), 'administrator', 'ckeditor_advanced_options', array(&$this, 'advanced_options'));
+		//$upload_page = add_submenu_page('ckeditor_settings', __('CKEditor Upload Settings'), __('Upload Options'), 'administrator', 'ckeditor_upload_options', array(&$this, 'upload_options'));
+		//add_action('admin_print_styles-' . $upload_page, array(&$this, 'print_admin_upload_styles'));
 
-		if (count($this->get_writable_files()) > 0) {
-			$file_editor_page = add_submenu_page('ckeditor_settings', __('CKEditor File Editor'), __('File Editor'), 'administrator', 'ckeditor_file_editor', array(&$this, 'file_editor'));
-			add_action('admin_print_scripts-' . $file_editor_page, array(&$this, 'file_editor_js'));
-		}
+		//if (count($this->get_writable_files()) > 0) {
+			//$file_editor_page = add_submenu_page('ckeditor_settings', __('CKEditor File Editor'), __('File Editor'), 'administrator', 'ckeditor_file_editor', array(&$this, 'file_editor'));
+			//add_action('admin_print_scripts-' . $file_editor_page, array(&$this, 'file_editor_js'));
+		//}
 	}
 
 	private function ckeditor_get_version() {
