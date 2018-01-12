@@ -40,7 +40,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 		<h3><?php _e('Post/Page Editor options', 'ckeditor_wordpress')?></h3>
 
 		<table class="form-table">
-			<tr valign="top">
+		<!--	<tr valign="top">
 				<th scope="row"><?php _e('Default state', 'ckeditor_wordpress') ?></th>
 				<td>
 					<select name="options[appearance][default_state]">
@@ -62,6 +62,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 					<span class="description"><?php _e('When enabled , CKEditor will be used in excerpt field.', 'ckeditor_wordpress') ?></span>
 				</td>
 			</tr>
+		-->	
 			<tr valign="top">
 				<th scope="row"><?php _e('Editor toolbar', 'ckeditor_wordpress') ?></th>
 				<td>
@@ -74,10 +75,11 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 					<span class="description"><?php _e('Choose a default toolbar set. To change the toolbar, edit', 'ckeditor_wordpress') ?> "ckeditor.config.js".</span>
 				</td>
 			</tr>
-			<tr valign="top">
+			<!-- <tr valign="top">
 				<th scope="row"><?php _e('Editor height')?></th>
 				<td><input type="text" name="options[appearance][post_editor_height]"	value="<?php echo $this->options['appearance']['post_editor_height']; ?>"/>px</td>
 			</tr>
+		-->
 		</table>
 <!--  
 		<h3><?php _e('Comment Editor Options', 'ckeditor_wordpress')?></h3>

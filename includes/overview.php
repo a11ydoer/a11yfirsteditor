@@ -192,14 +192,18 @@ function ckeditor_overview_configuration() {
 	<div>
 	<table class="form-table">
 		<tr valign="top">
-			<td>Plugin Version</td><td><?php echo $GLOBALS['ckeditor_plugin_version']; ?></td>
+			<td>A11yFirst Editor Plugin Version</td><td>0.6.0<!-- <?php echo $GLOBALS['ckeditor_plugin_version']; ?> --></td>
 		</tr>
 		<tr valign="top">
-			<td>Editor Version</td><td><?php echo $GLOBALS['ckeditor_version']; ?></td>
+			<td>A11yFirst Editor Code Release</td><td>https://github.com/a11yfirst/distribution/releases</td>
 		</tr>
 		<tr valign="top">
-			<td>CKFinder</td><td><?php echo $GLOBALS['ckfinder_status']; ?></td>
+			<td>A11yFirst Project Site</td><td>https://a11yfirst.library.illinois.edu/</td>
 		</tr>
+		<tr valign="top">
+			<td>CKEditor Plugin Version</td><td><?php echo $GLOBALS['ckeditor_plugin_version']; ?></td>
+		</tr>
+		
 	</table>
 	</div>
 <?php
@@ -244,10 +248,10 @@ function ckeditor_overview_help() {
 	<?php
 }
 
-add_meta_box('dashboard_overview_configuration', __('CKEditor Information', 'ckeditor_wordpress'), 'ckeditor_overview_configuration', 'ckeditor_overview', 'left', 'core');
-add_meta_box('dashboard_overview_help', __('Useful Links', 'ckeditor_wordpress'), 'ckeditor_overview_help', 'ckeditor_overview', 'left', 'core');
-add_meta_box('dashboard_overview_compatibility', __('CKEditor Compatibility', 'ckeditor_wordpress'), 'ckeditor_overview_compatibility', 'ckeditor_overview', 'right', 'core');
-add_meta_box('dashboard_overview_server', __('Server Information', 'ckeditor_wordpress'), 'ckeditor_overview_server', 'ckeditor_overview', 'right', 'core');
-add_meta_box('dashboard_reset_settings', __('Reset Plugin Settings', 'ckeditor_wordpress'), 'ckeditor_reset_settings', 'ckeditor_overview', 'left', 'core');
+ add_meta_box('dashboard_overview_configuration', __('A11yFirst Editor Information', 'ckeditor_wordpress'), 'ckeditor_overview_configuration', 'ckeditor_overview', 'left', 'core');
+// add_meta_box('dashboard_overview_help', __('Useful Links', 'ckeditor_wordpress'), 'ckeditor_overview_help', 'ckeditor_overview', 'left', 'core');
+// add_meta_box('dashboard_overview_compatibility', __('CKEditor Compatibility', 'ckeditor_wordpress'), 'ckeditor_overview_compatibility', 'ckeditor_overview', 'right', 'core');
+// add_meta_box('dashboard_overview_server', __('Server Information', 'ckeditor_wordpress'), 'ckeditor_overview_server', 'ckeditor_overview', 'right', 'core');
+// add_meta_box('dashboard_reset_settings', __('Reset Plugin Settings', 'ckeditor_wordpress'), 'ckeditor_reset_settings', 'ckeditor_overview', 'left', 'core');
 
 ckeditor_admin_overview();
