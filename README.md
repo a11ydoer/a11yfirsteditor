@@ -3,11 +3,11 @@ A11yFirst Editor Wordpress Plugin
 
 This plugin replaces the default WordPress editor with A11yFirst editor which is built on [CKEditor](http://ckeditor.com).
 
-## Maintenance status
+## About plugin
 
-## About extension
+It aims to replace the default WordPress editor with A11yFirst editor which is built on CKEditor.
 
-For information about features, installation, upgrading and changelog check https://a11yfirst.library.illinois.edu/
+For information about features, installation, upgrading and changelog, please visit https://github.com/a11yfirst For the project information, please check https://a11yfirst.library.illinois.edu/
 
 ### License
 
