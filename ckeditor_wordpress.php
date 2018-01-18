@@ -4,9 +4,9 @@
 Plugin Name: A11yEditor for WordPress
 Plugin URI: http://wordpress.ckeditor.com/
 Description: Replaces the default WordPress editor with <a href="http://ckeditor.com/"> CKEditor</a>
-Version: 4.5.3.3
-Author: Jemma Testing
-Author URI: http://cksource.com/
+Version: 0.5
+Author: JaEun Jemma Ku
+Author URI: https://www.library.illinois.edu/bios/jku/
 */
 
 add_action('init', 'ckeditor_init');
